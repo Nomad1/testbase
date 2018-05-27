@@ -18,8 +18,8 @@ int main(int argc, const char * argv[])
 	string from = argc >= 5 ? argv[4] : "2014-10-31 00:00";
 	string to = argc >= 6 ? argv[5] : "2014-10-31 23:59";
 	int offset = 60;
-	int ips = argc >= 3 ? atoi(argv[2]) : 10000;
-	int cpus = argc >= 4 ? atoi(argv[3]) : 8;
+	int ips = argc >= 3 ? atoi(argv[2]) : 1000;
+	int cpus = argc >= 4 ? atoi(argv[3]) : 2;
 
 	struct tm timeDate;
 	memset(&timeDate, 0, sizeof(struct tm));
